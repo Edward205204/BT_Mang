@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài Tập Array trong JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h2>Bài tập 1: Quản lý mảng</h2>
+      <p>
+        Nhập giá trị cần thêm:
+        <input type="text" id="valueInput" placeholder="Nhập giá trị" />
+      </p>
+      <p>
+        (Dành cho thao tác thêm vào vị trí bất kỳ) Nhập chỉ số:
+        <input type="number" id="indexInput" placeholder="Nhập chỉ số" />
+      </p>
+      <p>
+        <button onclick="addToEnd()">Thêm vào Cuối</button>
+        <button onclick="addToStart()">Thêm vào Đầu</button>
+        <button onclick="addAtIndex()">Thêm vào Vị Trí Bất Kỳ</button>
+      </p>
+      <p>Mảng hiện tại: <span class="arrayDisplay">[]</span></p>
+    </section>
+
+    <section>
+      <h2>Bài tập 2: Tìm số lớn nhất và số nhỏ nhất</h2>
+      <p>Mảng số: <span id="numbersDisplay"></span></p>
+      <button onclick="findMaxMin()">Tìm số lớn nhất và nhỏ nhất</button>
+      <p id="maxMinResult"></p>
+    </section>
+
+    <section>
+      <h2>Bài tập 3: Tính tổng các phần tử trong mảng</h2>
+      <p class="arrayDisplay">[]</p>
+      <button onclick="sumArray()">Tính tổng</button>
+      <p id="sumResult"></p>
+    </section>
+
+    <section>
+      <h2>Bài tập 5: Sắp xếp mảng tăng dần</h2>
+      <p class="arrayDisplay">[]</p>
+      <button onclick="sortArray()">Sắp xếp mảng</button>
+      <p id="sortedArray"></p>
+    </section>
+
+    <section>
+      <h2>Bài tập 6: Lọc các số chẵn và số lẻ trong mảng</h2>
+      <p class="arrayDisplay">[]</p>
+      <button onclick="filterEvenOdd()">Lọc số chẵn/lẻ</button>
+      <p id="evenOddResult"></p>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
